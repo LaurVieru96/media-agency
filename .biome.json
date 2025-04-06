@@ -1,0 +1,13 @@
+{
+    "extends": ["recommended"],
+    "rules": {
+      "indentation": ["tab"],
+      "line-length": [80],
+      "quotes": "double"
+    },
+    "languages": {
+      "typescript": { "enabled": true },
+      "javascript": { "enabled": true }
+    }
+  }
+  
