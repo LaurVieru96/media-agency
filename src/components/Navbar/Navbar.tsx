@@ -29,19 +29,20 @@ const Navbar: React.FC<NavbarProps> = ({
 					<p className="text-xl font-medium">
 						<NavLink to="/">
 							<svg
+								viewBox="0 0 1024 1024"
 								className="w-8 h-8 fill-black dark:fill-white hover:animate-pulse"
-								viewBox="0 0 254.532 254.532"
+								version="1.1"
 								xmlns="http://www.w3.org/2000/svg"
 							>
 								<title>logo</title>
-								<path d="M127.267,0.001C57.092,0.001,0,57.091,0,127.266s57.092,127.266,127.267,127.266s127.266-57.091,127.266-127.266 S197.441,0.001,127.267,0.001z M38.646,158.994c0.138-0.014,0.273-0.023,0.411-0.038l48.101-5.039 c0.41-0.043,0.825-0.064,1.232-0.064c5.951,0,11.081,4.642,11.679,10.568l5.221,51.762c0.075,0.751,0.18,1.661,0.317,2.691 C74.501,211.521,49.312,188.691,38.646,158.994z M127.098,151.516c-13.393,0-24.249-10.857-24.249-24.249 c0-13.393,10.856-24.25,24.249-24.25s24.249,10.857,24.249,24.25C151.347,140.659,140.49,151.516,127.098,151.516z M148.926,218.874 c0.138-1.031,0.242-1.941,0.317-2.692l5.221-51.761c0.598-5.922,5.724-10.561,11.67-10.561c0.409,0,0.825,0.022,1.236,0.065 l47.764,5.022c0.249,0.026,0.495,0.045,0.743,0.069C205.209,188.703,180.025,211.523,148.926,218.874z M153.568,91.029 c-7.229-2.545-16.63-3.947-26.471-3.947s-19.242,1.401-26.471,3.947L34.01,114.485c6.256-45.878,45.69-81.347,93.257-81.347 c47.61,0,87.072,35.533,93.273,81.472L153.568,91.029z" />
+								<path d="M877.685565 727.913127l-0.584863-0.365539a32.898541 32.898541 0 0 1-8.041866-46.423497 411.816631 411.816631 0 1 0-141.829267 145.777092c14.621574-8.992268 33.62962-5.117551 43.645398 8.772944l0.146216 0.073108a30.412874 30.412874 0 0 1-7.968758 43.206751l-6.141061 4.020933a475.201154 475.201154 0 1 1 163.615412-164.419599 29.974227 29.974227 0 0 1-42.841211 9.357807z m-537.342843-398.584106c7.164571-7.091463 24.71046-9.650239 33.26408 0 10.600641 11.185504 7.164571 29.462472 0 37.138798l-110.612207 107.468569L370.901811 576.14119c7.164571 7.091463 8.114974 27.342343 0 35.384209-9.796455 9.723347-29.828011 8.188081-36.480827 1.535265L208.309909 487.388236a18.423183 18.423183 0 0 1 0-25.953294l132.032813-132.032813z m343.314556 0l132.032813 132.032813a18.423183 18.423183 0 0 1 0 25.953294L689.652124 613.133772c-6.652816 6.579708-25.587754 10.746857-36.553935 0-10.30821-10.235102-7.091463-31.290168 0-38.381632l108.345863-100.669537-111.855041-108.638294c-7.164571-7.676326-9.504023-26.611265 0-36.04218 9.284699-9.138484 26.903696-7.091463 34.068267 0z m-135.54199-26.318833c3.582286-9.504023 21.347498-15.498868 32.679217-11.258612 10.819965 4.020933 17.180349 19.008046 14.256035 28.512069l-119.896906 329.716493c-3.509178 9.504023-20.616419 13.305632-30.193551 9.723347-10.161994-3.509178-21.201282-17.545889-17.545888-26.976804l120.627985-329.716493z" />
 							</svg>
 						</NavLink>
 					</p>
 				</div>
 				<div className="flex justify-center items-center">
 					{/* Dark Mode Switcher */}
-					<div className="mr-5 flex bg-gray-800 dark:bg-gray-900 rounded-full p-1">
+					<div className="mr-2 md:mr-5 flex bg-gray-800 dark:bg-gray-900 rounded-full p-1">
 						<button
 							type="button"
 							onClick={() => toggleTheme("light")}
@@ -96,11 +97,11 @@ const Navbar: React.FC<NavbarProps> = ({
 						</button>
 					</div>
 					{/* Language Switcher */}
-					<div className="mr-5">
+					<div className="mr-2 md:mr-5">
 						<select
 							value={selectedLanguage}
 							onChange={handleChange}
-							className="cursor-pointer transition-all duration-400 ease-in-out opacity-80 hover:opacity-100 hover:shadow-2xl hover:transform appearance-none bg-white border border-gray-300 rounded-2xl px-4 py-2 text-gray-800 focus:outline-none focus:ring-2 focus:ring-gray-500"
+							className="cursor-pointer transition-all duration-400 ease-in-out opacity-80 hover:opacity-100 hover:shadow-2xl hover:transform appearance-none bg-white border border-gray-300 rounded-2xl  px-3 py-1 md:px-4 md:py-2 text-gray-800 focus:outline-none focus:ring-2 focus:ring-gray-500"
 						>
 							{Object.keys(languages).map((lng) => (
 								<option key={lng} value={lng}>
@@ -109,10 +110,10 @@ const Navbar: React.FC<NavbarProps> = ({
 							))}
 						</select>
 					</div>
-					<div className="bg-[#7c818d1a] rounded-[200px] py-3 px-7">
+					<div className="bg-[#7c818d1a] rounded-[200px] py-2 px-5 md:py-3 md:px-7">
 						<button
 							type="button"
-							className="text-lg text-dark dark:text-white dark:hover:text-[#b6bcc9]"
+							className="text-base md:text-lg text-dark dark:text-white dark:hover:text-[#b6bcc9]"
 						>
 							<NavLink to={"/"}>
 								<Trans i18nKey={"navbar.home"}>Home</Trans>

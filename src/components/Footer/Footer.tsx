@@ -8,9 +8,13 @@ const Footer: React.FC = () => {
 				<div className="flex flex-col md:flex-row justify-between items-start p-5 md:p-10 rounded-md">
 					<div className="mb-8 md:mb-0">
 						<div className="flex items-center mb-4">
-							<span className="text-2xl font-bold">Name</span>
+							<span className="text-2xl font-bold">Dev Union Media</span>
 						</div>
-						<p className="text-gray-400 max-w-xs">Description</p>
+						<p className="text-gray-400 max-w-xs">
+							Dezvoltăm site-uri web moderne și oferim servicii de mentenanță,
+							optimizare și suport tehnic. Frontend și backend, de la idee la
+							implementare.
+						</p>
 						<div className="flex space-x-4 mt-6">
 							<a
 								href="https://www.facebook.com/"
@@ -48,7 +52,7 @@ const Footer: React.FC = () => {
 										href="mailto:contact@motorflow.com"
 										className="hover:text-gray-400"
 									>
-										contact@devunion-media.com
+										contact@devunion-media.ro
 									</a>
 								</div>
 							</div>
@@ -70,7 +74,7 @@ const Footer: React.FC = () => {
 			<div className="my-12 pt-4 border-gray-800 text-center text-gray-500 text-sm">
 				<p>
 					Copyright ©{" "}
-					<span className="text-dark dark:text-white">Media Agency</span> |
+					<span className="text-dark dark:text-white">DevUnion Media</span> |
 					Designed by{" "}
 					<a href="/" className="text-dark dark:text-white">
 						DevUnion Media
