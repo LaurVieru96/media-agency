@@ -6,6 +6,7 @@ import { Routes, Route } from "react-router";
 import { useTranslation } from "react-i18next";
 import Navbar from "./components/Navbar/Navbar";
 import Footer from "./components/Footer/Footer";
+import Home from "./pages/Home/Home";
 
 const App: React.FC = () => {
 	const { i18n } = useTranslation();
@@ -53,7 +54,7 @@ const App: React.FC = () => {
 			/>
 			<main className="flex-grow">
 				<Routes>
-					<Route path="/" element={<div>Home</div>} />
+					<Route path="/" element={<Home />} />
 					<Route path="/prices" element={<div>Prices</div>} />
 				</Routes>
 			</main>
