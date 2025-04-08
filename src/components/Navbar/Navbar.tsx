@@ -110,7 +110,7 @@ const Navbar: React.FC<NavbarProps> = ({
 							))}
 						</select>
 					</div>
-					<div className="bg-[#7c818d1a] rounded-[200px] py-2 px-5 md:py-3 md:px-7">
+					{/* <div className="bg-[#7c818d1a] rounded-[200px] py-2 px-5 md:py-3 md:px-7">
 						<button
 							type="button"
 							className="text-base md:text-lg text-dark dark:text-white dark:hover:text-[#b6bcc9]"
@@ -119,7 +119,7 @@ const Navbar: React.FC<NavbarProps> = ({
 								<Trans i18nKey={"navbar.home"}>Home</Trans>
 							</NavLink>
 						</button>
-					</div>
+					</div> */}
 				</div>
 			</div>
 		</nav>
