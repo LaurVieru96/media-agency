@@ -1,6 +1,6 @@
 import type React from "react";
 import { NavLink } from "react-router";
-import { Trans } from "react-i18next";
+// import { Trans } from "react-i18next";
 
 interface NavbarProps {
 	selectedLanguage: string;
